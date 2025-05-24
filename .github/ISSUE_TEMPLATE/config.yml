@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/MJ-AHMAD/MJ-AHMAD-OVERVIEW/discussions
+    about: Please ask and answer questions here.
+  - name: Discord Community
+    url: https://discord.gg/wQkqJw3Y
+    about: Join our Discord community for real-time discussions.
+  - name: Security Issue
+    url: https://github.com/MJ-AHMAD/MJ-AHMAD-OVERVIEW/security/policy
+    about: Please report security vulnerabilities here.

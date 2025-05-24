@@ -1,0 +1,479 @@
+{
+  "name": "trusted-ally-coxs-bazar",
+  "version": "1.0.0",
+  "description": "A comprehensive microservices-based district management system for Cox's Bazar",
+  "private": true,
+  "author": {
+    "name": "MJ Ahmad",
+    "email": "mjahmad2024@outlook.com",
+    "url": "https://github.com/MJ-AHMAD"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MJ-AHMAD/coxs"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/Sponsors/MJ-AHMAD"
+    },
+    {
+      "type": "kofi",
+      "url": "https://ko-fi.com/mjahmad"
+    }
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-aspect-ratio": "^1.0.3",
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+    "@radix-ui/react-popover": "^1.0.7",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@radix-ui/react-toast": "^1.1.5",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^11.0.3",
+    "lucide-react": "^0.323.0",
+    "next": "^15.1.0",
+    "next-themes": "^0.2.1",
+    "react": "^19.1.0",
+    "react-day-picker": "^8.10.1",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7",
+    "vaul": "^0.9.9",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^15.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-tailwindcss": "^3.14.3",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+    "*.{json,css,md}": ["prettier --write"]
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@10.9.0",
+  "projectStructure": {
+    "app": {
+      "layout.tsx": "Root layout with metadata and providers",
+      "page.tsx": "Home page with project overview",
+      "globals.css": "Global styles including Tailwind directives",
+      "about": {
+        "page.tsx": "About page with project information"
+      },
+      "administrative": {
+        "page.tsx": "Administrative services page",
+        "contact-logs": {
+          "page.tsx": "Contact logs for administrators"
+        },
+        "founder": {
+          "layout.tsx": "Layout for founder pages",
+          "page.tsx": "Founder information page"
+        },
+        "logs": {
+          "page.tsx": "System logs for administrators"
+        }
+      },
+      "ads": {
+        "page.tsx": "Advertising opportunities page"
+      },
+      "archive": {
+        "loading.tsx": "Loading state for archive page",
+        "page.tsx": "Archive of historical data and documents"
+      },
+      "arabic": {
+        "page.tsx": "Arabic language version of the site"
+      },
+      "bangla": {
+        "page.tsx": "Bangla language version of the site"
+      },
+      "cli": {
+        "page.tsx": "Command Line Interface documentation"
+      },
+      "climate-hub": {
+        "page.tsx": "Climate information and resources"
+      },
+      "contact": {
+        "page.tsx": "Contact form and information"
+      },
+      "contributing": {
+        "page.tsx": "Guidelines for contributing to the project"
+      },
+      "docs": {
+        "page.tsx": "Project documentation"
+      },
+      "donation": {
+        "page.tsx": "Donation options and information"
+      },
+      "economic-hub": {
+        "EconomicHubClientPage.tsx": "Client component for economic hub",
+        "loading.tsx": "Loading state for economic hub",
+        "page.tsx": "Economic information and resources"
+      },
+      "education-hub": {
+        "page.tsx": "Education information and resources"
+      },
+      "english": {
+        "page.tsx": "English language version of the site"
+      },
+      "health-hub": {
+        "page.tsx": "Health information and resources"
+      },
+      "infrastructure-hub": {
+        "page.tsx": "Infrastructure information and resources"
+      },
+      "initiatives": {
+        "digital-divide": {
+          "page.tsx": "Digital divide initiative information"
+        }
+      },
+      "investment": {
+        "page.tsx": "Investment opportunities information"
+      },
+      "license": {
+        "page.tsx": "Project license information"
+      },
+      "marine-resource-hub": {
+        "page.tsx": "Marine resources information"
+      },
+      "mjahmad": {
+        "page.tsx": "MJ Ahmad profile page"
+      },
+      "news": {
+        "chief-advisor-initiative": {
+          "page.tsx": "Chief advisor initiative news"
+        },
+        "digital-literacy": {
+          "page.tsx": "Digital literacy news"
+        },
+        "flood-relief": {
+          "page.tsx": "Flood relief news"
+        },
+        "page.tsx": "News overview page"
+      },
+      "research-hub": {
+        "page.tsx": "Research information and resources"
+      },
+      "rohingya": {
+        "page.tsx": "Rohingya refugee response information"
+      },
+      "sitemap": {
+        "page.tsx": "Site navigation structure"
+      },
+      "social-initiatives": {
+        "page.tsx": "Social initiatives information"
+      },
+      "tourist-hub": {
+        "page.tsx": "Tourism information and resources"
+      },
+      "actions": {
+        "contact.ts": "Server action for contact form",
+        "log-contact.ts": "Server action for logging contacts",
+        "newsletter.ts": "Server action for newsletter subscriptions"
+      },
+      "api": {
+        "contact-logs": {
+          "route.ts": "API route for contact logs"
+        },
+        "logs": {
+          "route.ts": "API route for system logs"
+        }
+      }
+    },
+    "components": {
+      "contact-form.tsx": "Contact form component",
+      "enhanced-services-section.tsx": "Enhanced services section component",
+      "featured-project.tsx": "Featured project component",
+      "footer.tsx": "Footer component with links and information",
+      "founder-contact-form.tsx": "Contact form for founder",
+      "hero-slideshow.tsx": "Hero slideshow component",
+      "home-testimonials.tsx": "Testimonials component for home page",
+      "image-carousel.tsx": "Image carousel component",
+      "language-selector.tsx": "Language selector component",
+      "mobile-nav.tsx": "Mobile navigation component",
+      "navbar.tsx": "Navigation bar component",
+      "news-updates.tsx": "News updates component",
+      "newsletter-subscription.tsx": "Newsletter subscription component",
+      "open-source-banner.tsx": "Open source project banner component",
+      "package-cards.tsx": "Package cards component",
+      "statistics-section.tsx": "Statistics section component",
+      "testimonials.tsx": "Testimonials component",
+      "vision-projects-section.tsx": "Vision projects section component",
+      "ui": {
+        "accordion.tsx": "Accordion UI component",
+        "alert-dialog.tsx": "Alert dialog UI component",
+        "alert.tsx": "Alert UI component",
+        "aspect-ratio.tsx": "Aspect ratio UI component",
+        "avatar.tsx": "Avatar UI component",
+        "badge.tsx": "Badge UI component",
+        "button.tsx": "Button UI component",
+        "calendar.tsx": "Calendar UI component",
+        "card.tsx": "Card UI component",
+        "checkbox.tsx": "Checkbox UI component",
+        "dialog.tsx": "Dialog UI component",
+        "dropdown-menu.tsx": "Dropdown menu UI component",
+        "input.tsx": "Input UI component",
+        "label.tsx": "Label UI component",
+        "navigation-menu.tsx": "Navigation menu UI component",
+        "popover.tsx": "Popover UI component",
+        "progress.tsx": "Progress UI component",
+        "select.tsx": "Select UI component",
+        "separator.tsx": "Separator UI component",
+        "sheet.tsx": "Sheet UI component",
+        "tabs.tsx": "Tabs UI component",
+        "toast.tsx": "Toast UI component",
+        "toaster.tsx": "Toaster UI component",
+        "tooltip.tsx": "Tooltip UI component"
+      }
+    },
+    "hooks": {
+      "use-media-query.ts": "Hook for media queries",
+      "use-mobile.tsx": "Hook for detecting mobile devices",
+      "use-toast.ts": "Hook for toast notifications"
+    },
+    "lib": {
+      "utils.ts": "Utility functions"
+    },
+    "middleware.ts": "Next.js middleware for request processing",
+    "public": {
+      "images": {
+        "logo.svg": "Project logo",
+        "hero-bg.jpg": "Hero background image",
+        "sponsors": {
+          "github.svg": "GitHub sponsor logo",
+          "kofi.svg": "Ko-fi logo"
+        }
+      },
+      "icons": {
+        "favicon.ico": "Favicon",
+        "icon-192.png": "192x192 icon",
+        "icon-512.png": "512x512 icon"
+      }
+    }
+  },
+  "microservices": {
+    "core": {
+      "api-gateway": "API Gateway for routing requests to microservices",
+      "service-registry": "Service discovery and registration",
+      "config-server": "Centralized configuration management",
+      "auth-service": "Authentication and authorization",
+      "monitoring": "System monitoring and logging"
+    },
+    "domain": {
+      "tourist-hub": "Tourism management microservice",
+      "education-hub": "Education management microservice",
+      "economic-hub": "Economic development microservice",
+      "climate-hub": "Climate information microservice",
+      "social-initiatives": "Social initiatives microservice",
+      "health-hub": "Healthcare management microservice",
+      "marine-resource-hub": "Marine resources microservice",
+      "infrastructure-hub": "Infrastructure management microservice",
+      "research-hub": "Research management microservice",
+      "water-resources-hub": "Water resources microservice",
+      "community-hub": "Community engagement microservice",
+      "sustainable-development-hub": "Sustainable development microservice"
+    },
+    "support": {
+      "administrative": "Administrative services",
+      "sitemap": "Site navigation structure",
+      "cli": "Command-line tools",
+      "ads": "Advertisement management",
+      "archive": "Data archiving services"
+    },
+    "i18n": {
+      "i18n-service": "Internationalization service with support for English, Bangla, and Arabic"
+    }
+  },
+  "deployment": {
+    "docker": "Docker configuration files",
+    "kubernetes": "Kubernetes configuration files",
+    "ci-cd": "CI/CD pipeline configurations",
+    "docker-compose.yml": "Docker Compose configuration"
+  },
+  "documentation": {
+    "docs": "System documentation",
+    "README.md": "Project overview",
+    "CONTRIBUTING.md": "Contribution guidelines",
+    "CODE_OF_CONDUCT.md": "Code of conduct for contributors",
+    "SECURITY.md": "Security policy and reporting vulnerabilities",
+    "CHANGELOG.md": "Project changelog"
+  },
+  "openSource": {
+    "license": "MIT",
+    "contributors": [
+      {
+        "name": "MJ Ahmad",
+        "email": "mjahmad2024@outlook.com",
+        "url": "https://github.com/MJ-AHMAD"
+      }
+    ],
+    "sponsorship": {
+      "github": "https://github.com/Sponsors/MJ-AHMAD",
+      "kofi": "https://ko-fi.com/mjahmad"
+    },
+    "community": {
+      "discussions": "https://github.com/MJ-AHMAD/coxs/discussions",
+      "issues": "https://github.com/MJ-AHMAD/coxs/issues",
+      "pullRequests": "https://github.com/MJ-AHMAD/coxs/pulls"
+    }
+  },
+  "config": {
+    "next": {
+      "output": "standalone",
+      "experimental": {
+        "serverActions": true,
+        "serverComponentsExternalPackages": []
+      }
+    },
+    "tailwind": {
+      "content": ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+      "theme": {
+        "extend": {
+          "colors": {
+            "primary": {
+              "DEFAULT": "hsl(222.2, 47.4%, 11.2%)",
+              "foreground": "hsl(210, 40%, 98%)"
+            },
+            "secondary": {
+              "DEFAULT": "hsl(210, 40%, 96.1%)",
+              "foreground": "hsl(222.2, 47.4%, 11.2%)"
+            },
+            "muted": {
+              "DEFAULT": "hsl(210, 40%, 96.1%)",
+              "foreground": "hsl(215.4, 16.3%, 46.9%)"
+            },
+            "accent": {
+              "DEFAULT": "hsl(210, 40%, 96.1%)",
+              "foreground": "hsl(222.2, 47.4%, 11.2%)"
+            },
+            "destructive": {
+              "DEFAULT": "hsl(0, 100%, 50%)",
+              "foreground": "hsl(210, 40%, 98%)"
+            },
+            "border": "hsl(214.3, 31.8%, 91.4%)",
+            "input": "hsl(214.3, 31.8%, 91.4%)",
+            "ring": "hsl(222.2, 84%, 4.9%)",
+            "background": "hsl(0, 0%, 100%)",
+            "foreground": "hsl(222.2, 84%, 4.9%)",
+            "card": {
+              "DEFAULT": "hsl(0, 0%, 100%)",
+              "foreground": "hsl(222.2, 84%, 4.9%)"
+            },
+            "popover": {
+              "DEFAULT": "hsl(0, 0%, 100%)",
+              "foreground": "hsl(222.2, 84%, 4.9%)"
+            }
+          },
+          "borderRadius": {
+            "lg": "var(--radius)",
+            "md": "calc(var(--radius) - 2px)",
+            "sm": "calc(var(--radius) - 4px)"
+          },
+          "keyframes": {
+            "accordion-down": {
+              "from": { "height": "0" },
+              "to": { "height": "var(--radix-accordion-content-height)" }
+            },
+            "accordion-up": {
+              "from": { "height": "var(--radix-accordion-content-height)" },
+              "to": { "height": "0" }
+            }
+          },
+          "animation": {
+            "accordion-down": "accordion-down 0.2s ease-out",
+            "accordion-up": "accordion-up 0.2s ease-out"
+          }
+        }
+      },
+      "plugins": ["tailwindcss-animate"]
+    },
+    "eslint": {
+      "extends": ["next/core-web-vitals", "prettier", "plugin:tailwindcss/recommended"],
+      "plugins": ["tailwindcss"],
+      "rules": {
+        "react/no-unescaped-entities": "off",
+        "@next/next/no-img-element": "off",
+        "tailwindcss/no-custom-classname": "off"
+      }
+    },
+    "prettier": {
+      "semi": false,
+      "singleQuote": true,
+      "tabWidth": 2,
+      "trailingComma": "es5",
+      "printWidth": 100,
+      "plugins": ["prettier-plugin-tailwindcss"]
+    },
+    "typescript": {
+      "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "plugins": [
+          {
+            "name": "next"
+          }
+        ],
+        "paths": {
+          "@/*": ["./*"]
+        }
+      },
+      "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+      "exclude": ["node_modules"]
+    }
+  }
+}

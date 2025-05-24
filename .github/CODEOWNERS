@@ -1,0 +1,21 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @MJ-AHMAD will be requested for review when someone opens a pull request.
+*       @MJ-AHMAD
+
+# Order is important; the last matching pattern takes the most precedence.
+
+# Core components
+/components/           @MJ-AHMAD
+/app/                  @MJ-AHMAD
+/lib/                  @MJ-AHMAD
+
+# Documentation
+/docs/                 @MJ-AHMAD
+*.md                   @MJ-AHMAD
+
+# Configuration files
+*.json                 @MJ-AHMAD
+*.js                   @MJ-AHMAD
+*.ts                   @MJ-AHMAD
+*.tsx                  @MJ-AHMAD

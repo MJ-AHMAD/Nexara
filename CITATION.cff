@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Ahmad"
+    given-names: "Jafor"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "MJ-AHMAD OVERVIEW"
+version: 1.0.0
+date-released: 2023-05-21
+url: "https://github.com/MJ-AHMAD/MJ-AHMAD-OVERVIEW"
+repository-code: "https://github.com/MJ-AHMAD/MJ-AHMAD-OVERVIEW"
+license: MIT
