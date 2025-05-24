@@ -1,7 +1,7 @@
 # NEXARA
 
 <div align="center">
-  <img src="public/abstract-geometric-mj.png" alt="Nexara Logo" width="200" />
+  <img src="public/mj-ahmad-stylized.png" alt="Nexara Logo" width="200" />
   <h1>🌟 NEXARA - Next-Generation Digital Platform</h1>
   <p>A comprehensive digital ecosystem combining productivity tools, wellness tracking, project management, and innovative solutions - built with modern web technologies and designed for the future.</p>
   
@@ -19,10 +19,10 @@
 
 ## 🚀 Overview
 
-**NEXARA** is a cutting-edge digital platform that brings together multiple powerful tools and features in one unified ecosystem. From wellness tracking and project management to innovative meeting preparation tools and real-time space tracking, NEXARA represents the future of digital productivity and personal development.
+**NEXARA** is a unified digital platform that brings together three powerful initiatives: **Infinity Nexus** (advanced productivity tools), **Trusted Ally** (community development and tourism), and **Yunus Inspire** (social entrepreneurship). This integrated ecosystem represents the future of digital collaboration, sustainable development, and innovative technology solutions.
 
 ### 🎯 Vision
-To create a comprehensive digital ecosystem that empowers individuals and organizations to achieve their full potential through innovative technology solutions, wellness tracking, and collaborative tools.
+To create a comprehensive digital ecosystem that unifies three powerful initiatives - Infinity Nexus, Trusted Ally, and Yunus Inspire - empowering individuals and communities through innovative technology, social entrepreneurship, and collaborative development.
 
 ---
 
@@ -32,7 +32,6 @@ To create a comprehensive digital ecosystem that empowers individuals and organi
 - **🌟 Infinity Nexus** - Advanced productivity suite with 3D visualizations
 - **🤝 Trusted Ally** - Community-driven support and collaboration platform
 - **💡 Yunus Inspire** - Social entrepreneurship and microfinance tools
-- **🎯 Mental Strength** - Comprehensive mental wellness and resilience building
 
 ### 🛠️ **Productivity Tools**
 - **📊 Life Dashboard** - Track water intake, exercise, sleep, and daily habits
@@ -156,9 +155,6 @@ Community platform focused on Cox's Bazar development, tourism promotion, and lo
 
 ### 💡 **Yunus Inspire**
 Dedicated to Dr. Muhammad Yunus's vision of social business and microfinance, promoting sustainable development.
-
-### 🧠 **Mental Strength**
-Comprehensive mental wellness platform with habit tracking, meditation guides, and resilience building tools.
 
 ---
 
